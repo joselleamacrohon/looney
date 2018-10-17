@@ -1,0 +1,281 @@
+*{
+	/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.clear:after{
+	content: " "; /*invisible element*/
+	clear: both;
+	display: block;
+}
+
+.no-top {
+	margin-top: 0; 
+}
+
+img[alt*="service"] {
+	/*border: 1px solid black;*/
+	width: 60px;
+	height: 80px;
+	display: block;
+	float: left;
+	margin: 5px;
+}
+
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+.logo {
+	/*width: 140px;*/
+	/*height: 140px;*/
+	width: 140px;
+	height: 150px;
+	/*background-color: darkgrey;*/
+	margin: 0 auto; /*center horizontally*/
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#logo{
+	/*height: 100%;*/
+	width: 100%;
+	margin-bottom: 20px;
+/*	margin: 0 auto;*/
+}
+
+
+
+.nav {
+	background-color: white;
+	height: 100vh; /* 100 = 100% whole height of your screen (viewport)*/
+	width: 200px;
+	position: fixed;
+}
+
+/*.nav li:hover {
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	margin-bottom: 1px;
+}*/
+
+ul > li {
+	list-style: none; /*to remove bulletpoints*/
+	background-color: #399FE7;
+	margin-bottom: 2px; /*to create spacing*/
+	line-height: 48px;  /*base font-size= 16px; 16x3=48*/
+	text-align: center;
+	/*margin-bottom: 5px;*/
+}
+
+ul > li > a {
+	text-decoration: none; /*to remove the underline*/
+	color: white;
+	font-size: 15px;
+
+}
+
+ul > li > a:hover{
+	font-size: 20px;
+	line-height: 43px;
+	transition: 20%;
+}
+
+.main {
+	background-color: lightgrey;
+	margin-left: 200px; /*to move all contents bcoz of nav blocking*/
+}
+
+.banner {
+	background-color: skyblue;
+	height: 100vh; /* 100 = 100% whole height of your screen*/
+	position: relative; /*to help position box at the center*/
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+
+.box {
+	border:5px solid white;
+	text-align: center;
+	width: 40%; /*40% of the space of its parent*/
+	padding: 40px; /*between content and border*/
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
+
+.fs-title {
+	font-family: 'Mali', cursive;
+	/*font-size: 50px;*/
+}
+
+.fs-content {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.section-title {
+border:2px solid white;
+/*width: 200px;*/
+text-align: center;
+padding: 10px;
+/*background-color: rgba(69, 215, 255, 0.2);*/
+border-radius: 20px;
+margin-bottom: 20px;
+letter-spacing: 1px;
+font-size: 2em;
+background-color: white;
+}
+
+.about {
+	background-color: indianred;
+	height: 100vh;
+}
+
+.about-left{
+float: left;
+}
+
+#about-image {
+	width: 100%;
+	height: auto;
+}
+
+.about-right{
+padding-right: 10px;
+padding-left: 10px;
+text-align: justify;
+
+}
+
+.pads-about {
+	padding-bottom: 10px;
+	text-indent: 70px;
+}
+
+
+.services {
+	background-color: #BDC4C7;
+	height: 100vh;
+}
+/*
+.services-text {
+	overflow: hidden;
+	text-align: justify;
+	padding-left: 5px;
+	padding-right: 10px;
+	padding-top: 10px;
+}*/
+
+.services p {
+	overflow: hidden;
+	text-align: justify;
+	padding-right: 15px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: .9em;
+}
+
+.services h3 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.service-button {
+	border-radius: 5px;
+	padding: 3px;
+	font-size: .6em;
+	margin-left: 5px;
+	background-color: indianred;
+
+}
+.column {
+	/*border: 2px solid white;*/
+	width: 31%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+	min-height: 200px;
+	border-radius: 20px;
+	
+}
+
+.projects {
+	/*background-color:#FFC571 ;*/
+	background-color: skyblue;
+	height: 100vh;
+}
+
+.gallery {
+	background-color: indianred;
+	height: 100vh;
+	color: black;
+}
+
+.gallery > .column {
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 20px;
+	background-color: white;
+	padding: 10px;
+	min-height: 300px;
+}
+
+.gallery p {
+font-family: 'PT Sans Narrow', sans-serif;
+	font-size: .9em;
+	padding: 5px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+.gallery h3 {
+	padding-top: 10px;
+	text-align: center;
+}
+
+img[alt*=gallery] {  /* this *  means select all*/
+	width: 100%;
+	height: 120px;
+	display: block;
+	/*border: 1px solid white;*/
+	border-radius: 20px;
+}
+
+.footer {
+	background-color: white; /*green #4FBD5B*/
+	min-height: 20px;
+}
+
+img[alt*="social"] {
+	width: 35px;
+	height: 35px;
+	/*border: 1px solid black;*/
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.contact {
+	float: right;
+}
+
+.backtotop {
+	text-align: center;
+}
+
+.backtotop a {
+	text-decoration: none;
+}
